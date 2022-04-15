@@ -32,7 +32,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://sub.example.com",
     "http://localhost:3000",
     "http://127.0.0.1:8000",
-    "http://easy-med-client.vercel.app"
+    "https://easy-med-client.vercel.app"
 ]
 # Application definition
 # CORS_ALLOW_METHODS = [
