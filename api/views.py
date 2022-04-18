@@ -88,4 +88,5 @@ def emergency(request):
     param = request.GET.dict()
     best_hospital = db_handler.get_nearest_places(CUR_LOC_N, CUR_LOC_E, num=1)
     serializer = HospitalSerializer(best_hospital[0])
+    print(serializer)
     return JsonResponse(serializer.data, safe=False)

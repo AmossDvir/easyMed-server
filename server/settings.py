@@ -34,15 +34,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000",
     "https://easy-med-client.vercel.app",
 ]
-# Application definition
-# CORS_ALLOW_METHODS = [
-#     "DELETE",
-#     "GET",
-#     "OPTIONS",
-#     "PATCH",
-#     "POST",
-#     "PUT",
-# ]
 
 INSTALLED_APPS = [
     'corsheaders',
@@ -100,9 +91,9 @@ DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
     'NAME': 'easyMed',
-    'USER' : 'amoss',
+    'USER' : 'admin',
     'PASSWORD' : 'Amoss2812',
-    'HOST' : 'localhost',
+    'HOST' : 'heroku config:get DATABASE_URL -a easymed-app',
     'PORT' : '5432',
     }
 }
